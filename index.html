@@ -351,40 +351,6 @@ html,body{overflow-x:hidden}
 .surname-person .txt{font-size:11.5px;color:#334155;line-height:1.4}
 .surname-person .txt strong{color:#10233f;font-size:12px}
 .surname-rel{margin-top:8px;font-size:10.5px;color:#991b1b;background:#fff7f7;border:1px dashed #fecaca;border-radius:8px;padding:6px 9px}
-
-/* ===== 2026 Modern UI refresh — visual only; all existing data/workflows stay unchanged ===== */
-:root{
-  --primary:#4f46e5;--bg:#f3f6fb;--card:#ffffff;--border:#dce4ef;
-  --text:#13233a;--muted:#66758b;--navy:#0b1528;--blue:#4f46e5;
-  --shadow:0 10px 30px rgba(31,49,78,.09);
-}
-body{background:radial-gradient(circle at 8% 0%,#e7edff 0,transparent 28%),var(--bg)}
-.app{grid-template-rows:72px 46px 1fr}
-.toolbar{
-  padding:10px 18px;gap:9px;
-  background:linear-gradient(118deg,#091426 0%,#142b52 58%,#173a67 100%);
-  border-bottom:1px solid rgba(255,255,255,.1);
-  box-shadow:0 12px 32px rgba(8,20,39,.2);
-}
-.brand{min-width:255px}.brand-mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(145deg,#7c8cff,#37c6f4);box-shadow:0 9px 22px rgba(55,198,244,.28);letter-spacing:-.5px}.brand h1{font-size:17px;letter-spacing:.1px}.brand small{color:#b9c9df}
-.tool-btn{border-color:rgba(255,255,255,.15);background:rgba(255,255,255,.075);border-radius:11px;padding:9px 12px;transition:transform .15s,background .15s,border-color .15s}.tool-btn:hover{transform:translateY(-1px);background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3)}.tool-btn.primary{background:linear-gradient(135deg,#5b5cf0,#397be8);border-color:#7c8cff;box-shadow:0 7px 20px rgba(79,70,229,.28)}
-.view-tabs{padding:5px 18px 0;background:rgba(9,20,38,.96);gap:7px}.view-tab{padding:10px 18px;border-radius:11px 11px 0 0;color:#9eb1ca}.view-tab.active{background:linear-gradient(180deg,rgba(99,102,241,.24),rgba(99,102,241,.07));border-bottom-color:#7c8cff}.lock-tag{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.12)}
-.team-view{grid-template-columns:300px minmax(560px,1fr) 330px;background:#edf2f8}
-.team-sidebar,.team-inspector{background:rgba(255,255,255,.94);backdrop-filter:blur(14px)}
-.team-sidebar{border-right:1px solid #dce4ef}.team-inspector{border-left:1px solid #dce4ef}
-.team-sidebar .panel-head,.team-inspector .panel-head{background:rgba(255,255,255,.88);backdrop-filter:blur(12px);padding:17px 16px 13px}.step-title{font-size:14px!important}.step-num{width:28px;height:28px;border-radius:9px;background:linear-gradient(135deg,#5b5cf0,#397be8);box-shadow:0 7px 16px rgba(79,70,229,.23)}
-.team-new-btn{border-radius:11px;padding:11px 13px;background:linear-gradient(135deg,#4f46e5,#2774e6);box-shadow:0 8px 19px rgba(79,70,229,.22)}
-.team-control,.field input,.field select,.field textarea{border-color:#d7e0eb;border-radius:11px;background:#fbfdff;transition:border-color .15s,box-shadow .15s,background .15s}.team-control:focus,.field input:focus,.field select:focus,.field textarea:focus{background:#fff;border-color:#6f74f4;box-shadow:0 0 0 4px rgba(79,70,229,.11)}
-.team-plan-item{border-color:#e0e6ef;border-radius:12px;padding:10px 11px;box-shadow:0 3px 12px rgba(31,49,78,.035);transition:transform .15s,box-shadow .15s,border-color .15s}.team-plan-item:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(31,49,78,.08)}.team-plan-item.active{background:linear-gradient(135deg,#eef2ff,#edf7ff);border-color:#8c91ff;box-shadow:0 0 0 3px rgba(79,70,229,.08)}
-.team-employee-item{border-color:#e1e7ef;border-radius:12px;margin-bottom:7px;padding:9px;box-shadow:0 3px 10px rgba(31,49,78,.035)}.team-employee-item:hover{transform:translateY(-1px);border-color:#a5b4fc;background:#f8faff;box-shadow:0 8px 20px rgba(31,49,78,.08)}.team-employee-item img{width:40px;height:40px;border-radius:11px}.team-employee-item button{background:linear-gradient(135deg,#5b5cf0,#397be8);border-radius:9px}
-.team-workspace{background:#edf2f8}.team-topbar{padding:12px 15px;background:rgba(255,255,255,.93);backdrop-filter:blur(12px);box-shadow:0 8px 24px rgba(31,49,78,.07)}.team-topbar .title strong{font-size:16px}.team-action{border-radius:10px;padding:8px 11px;background:#f7f9fc}.team-action:hover{transform:translateY(-1px);box-shadow:0 6px 14px rgba(31,49,78,.09)}.team-action.primary{background:linear-gradient(135deg,#5b5cf0,#397be8);border-color:#5b5cf0}.team-action.green{background:linear-gradient(135deg,#079669,#16a085);border-color:#079669;box-shadow:0 7px 16px rgba(5,150,105,.17)}
-.team-board-wrap{background-color:#f5f8fc;background-image:radial-gradient(circle,#c9d5e5 1.05px,transparent 1.1px),radial-gradient(circle at 18% 12%,rgba(99,102,241,.09),transparent 28%),radial-gradient(circle at 82% 78%,rgba(14,165,233,.08),transparent 30%);background-size:24px 24px,100% 100%,100% 100%}
-.team-card{border:1px solid rgba(208,219,232,.95);border-radius:16px;box-shadow:0 10px 26px rgba(25,43,70,.10);transition:transform .16s,box-shadow .16s,border-color .16s}.team-card:hover{transform:translateY(-2px);border-color:#aab7ff;box-shadow:0 16px 34px rgba(25,43,70,.15)}.team-card.selected{border-color:#6366f1;box-shadow:0 0 0 5px rgba(99,102,241,.13),0 18px 38px rgba(25,43,70,.16)}.team-card img{border-radius:12px}.card-level{height:7px}.badge{border-radius:999px}.team-empty{border:1px solid #dbe4ef;border-radius:18px;box-shadow:0 16px 44px rgba(31,49,78,.09);background:rgba(255,255,255,.92);backdrop-filter:blur(12px)}
-.team-save-state{box-shadow:0 4px 12px rgba(22,101,52,.07)}.team-login-bar{background:rgba(248,250,252,.92)}
-.team-section-title{font-size:12.5px}.team-help-strip,.team-note{border-radius:11px}
-.pyr-main,.pyr-side-card,.pyr-kpi-card{border-radius:18px;box-shadow:0 12px 34px rgba(31,49,78,.08)}
-@media(max-width:1200px){.team-view{grid-template-columns:260px minmax(500px,1fr) 305px}}
-@media(max-width:880px){.toolbar{padding-inline:10px}.brand{min-width:210px}.team-view{grid-template-columns:220px minmax(430px,1fr)}.team-inspector{position:absolute;right:0;top:118px;bottom:0;width:300px;box-shadow:-15px 0 35px rgba(15,23,42,.15)}}
 </style>
 
 </head>
@@ -415,7 +381,7 @@ body{background:radial-gradient(circle at 8% 0%,#e7edff 0,transparent 28%),var(-
   </header>
   <nav class="view-tabs">
     <button class="view-tab view-tab-team active" id="tabTeamBtn"><span class="view-tab-ico">👥</span><span>จัดทีม / Team Planner</span></button>
-    <button class="view-tab" id="tabOrgBtn"><span class="view-tab-ico">🗂️</span><span>Org Chart จริง</span></button>
+    <button class="view-tab" id="tabOrgBtn"><span class="view-tab-ico">🗂️</span><span>Org Chart จริง</span><span class="lock-tag">อ่านอย่างเดียว</span></button>
     <button class="view-tab" id="tabFloorBtn"><span class="view-tab-ico">🏭</span><span>แผนผังคลังสินค้า</span></button>
   </nav>
   <div class="onboard-hint" id="onboardHint" hidden>
@@ -435,7 +401,7 @@ body{background:radial-gradient(circle at 8% 0%,#e7edff 0,transparent 28%),var(-
       <div class="legend"><span class="level-M3">M3</span><span class="level-M2">M2</span><span class="level-M1">M1</span><span class="level-M0">M0</span><span class="level-O3">O3</span><span class="level-O2">O2</span><span class="level-O1">O1</span><span class="level-S">S</span></div>
       <div class="employee-list" id="employeeList"></div>
     </aside>
-    <section class="workspace" id="workspace">
+    <section class="workspace" id="workspace"><div class="org-readonly-banner">🔒 Org Chart จริง — หน้านี้ใช้ดูโครงสร้างเท่านั้น ให้ทดลองย้ายคนใน “จัดทีม / Team Planner”</div>
       <div class="board" id="board"><svg class="links" id="links"></svg><div id="levelLabels"></div><div id="cards"></div></div>
       <div class="pyramid-panel" id="pyramidPanel" hidden>
         <div class="pyr-header">
@@ -552,7 +518,7 @@ body{background:radial-gradient(circle at 8% 0%,#e7edff 0,transparent 28%),var(-
         <select class="team-action" id="teamLayoutModeSelect"><option value="tree">ต้นไม้ตามสายบังคับบัญชา</option><option value="rows">แถวตามระดับ</option></select>
         <button class="team-action primary" id="teamAutoLayoutBtn">จัดเรียงอัตโนมัติ</button>
         <button class="team-action green" id="saveTeamBtn">บันทึกตอนนี้</button>
-        <button class="team-action" id="exportTeamImageBtn" title="สร้างภาพพีระมิดจากสมาชิกทีมที่เลือก">🖼️ ส่งออกพีระมิด</button>
+        <button class="team-action" id="exportTeamImageBtn">🖼️ ส่งออกรูปภาพ</button>
         <button class="team-action" id="teamZoomOutBtn">−</button><span class="team-zoom-label" id="teamZoomLabel">55%</span><button class="team-action" id="teamZoomInBtn">+</button>
         <button class="team-action" id="teamFitBtn">พอดีจอ</button>
       </div>
@@ -2008,7 +1974,7 @@ $('floorZoomInBtn').onclick=()=>{floorZoom=Math.min(2.5,floorZoom*1.15);applyFlo
 $('floorZoomOutBtn').onclick=()=>{floorZoom=Math.max(.3,floorZoom/1.15);applyFloorZoom();};
 $('floorZoomResetBtn').onclick=()=>{floorZoom=1;applyFloorZoom();};
 $('floorAddEmployeeBtn').onclick=openEmployeeModal;
-const ORG_READ_ONLY=false;
+const ORG_READ_ONLY=true;
 let mainView='team';
 function switchMainView(view){
   mainView=view;
@@ -2098,162 +2064,70 @@ function teamBuildTree(plan=currentTeam()){
   const sorter=(a,b)=>{const A=byId(a),B=byId(b);return levelRank(teamLevelLabel(A,plan))-levelRank(teamLevelLabel(B,plan))||displayName(A).localeCompare(displayName(B),'th')};
   map.forEach(arr=>arr.sort(sorter));roots.sort(sorter);return {map,roots};
 }
-// ===== ส่งออกทีมเป็นภาพพีระมิด: ใช้ข้อมูล รูป ชื่อ ตำแหน่ง และระดับจริงของทีมที่เลือก =====
+// ===== ส่งออกทีมเป็นรูปภาพ: รายชื่อทุกคนในทีม + ใครเป็นหัวหน้า/รายงานใคร วาดด้วย Canvas ล้วนๆ ไม่พึ่ง library ภายนอก =====
 async function exportTeamAsImage(){
-  const p=currentTeam(),btn=$('exportTeamImageBtn');
+  const p=currentTeam();
   if(!p){showToast('กรุณาเลือกทีมก่อน');return;}
   if(!p.memberIds.length){showToast('ทีมนี้ยังไม่มีสมาชิก เพิ่มคนก่อนส่งออก');return;}
-  const oldLabel=btn?.textContent;
-  if(btn){btn.disabled=true;btn.textContent='กำลังสร้างพีระมิด…';}
-  showToast('กำลังสร้างภาพพีระมิดจากข้อมูลทีม…');
-  try{
-    const members=teamMembers(p);
-    const imgMap={};
-    await Promise.all(members.map(e=>new Promise(res=>{
-      const img=new Image(),src=e.image||DEFAULT_AVATAR;
-      if(!String(src).startsWith('data:'))img.crossOrigin='anonymous';
-      img.onload=()=>{imgMap[e.id]=img;res();};
-      img.onerror=()=>res();
-      img.src=src;
-    })));
+  showToast('กำลังสร้างรูปภาพ…');
+  const members=teamMembers(p);
+  const imgMap={};
+  await Promise.all(members.map(e=>new Promise(res=>{
+    const img=new Image();
+    img.onload=()=>{imgMap[e.id]=img;res();};
+    img.onerror=()=>res();
+    img.src=e.image||DEFAULT_AVATAR;
+  })));
+  const {map,roots}=teamBuildTree(p);
+  const rows=[];
+  function walkTree(id,depth){
+    const e=byId(id);if(!e)return;
+    rows.push({e,depth,isLeader:Number(p.leaderId)===Number(id)});
+    (map.get(id)||[]).forEach(cid=>walkTree(cid,depth+1));
+  }
+  roots.forEach(r=>walkTree(r,0));
 
-    // กลุ่มพนักงานอ้างอิงระดับที่ตั้งไว้ในทีมจำลองก่อน แล้วจึงใช้ระดับจาก Org Chart จริง
-    const byLevel={};TEAM_LEVELS.forEach(l=>byLevel[l]=[]);
-    members.forEach(e=>{const lv=teamLevelLabel(e,p);(byLevel[lv]||(byLevel[lv]=[])).push(e);});
-    const present=TEAM_LEVELS.filter(l=>(byLevel[l]||[]).length>0);
-    if(!present.length){showToast('ไม่มีข้อมูลระดับให้วาดพีระมิด');return;}
-    present.forEach(l=>byLevel[l].sort((a,b)=>{
-      if(Number(a.id)===Number(p.leaderId))return -1;
-      if(Number(b.id)===Number(p.leaderId))return 1;
-      return displayName(a).localeCompare(displayName(b),'th');
-    }));
+  const scale=2,rowH=64,avatar=48,pad=26,headerH=104,indent=30;
+  const width=760,height=headerH+rows.length*rowH+pad*2;
+  const canvas=document.createElement('canvas');
+  canvas.width=width*scale;canvas.height=height*scale;
+  const ctx=canvas.getContext('2d');ctx.scale(scale,scale);
+  ctx.fillStyle='#ffffff';ctx.fillRect(0,0,width,height);
+  ctx.fillStyle='#10233f';ctx.fillRect(0,0,width,headerH);
+  ctx.fillStyle='#ffffff';ctx.font='bold 22px "Noto Sans Thai",Tahoma,sans-serif';
+  ctx.fillText(p.name||'ทีมจำลอง',pad,38);
+  ctx.fillStyle='#93c5fd';ctx.font='13px "Noto Sans Thai",Tahoma,sans-serif';
+  const infoLine=[p.department,p.objective].filter(Boolean).join(' • ')||'ทีมจำลองสำหรับวางแผน';
+  ctx.fillText(infoLine,pad,62);
+  ctx.fillStyle='#cbd5e1';ctx.font='11.5px "Noto Sans Thai",Tahoma,sans-serif';
+  ctx.fillText(`${members.length} คน • สร้างรูปเมื่อ ${new Date().toLocaleDateString('th-TH',{year:'numeric',month:'long',day:'numeric'})} • ไม่กระทบ Org Chart จริง`,pad,84);
 
-    const maxCount=Math.max(...present.map(l=>byLevel[l].length));
-    const cardW=122,cardH=128,cardGap=13,rowGap=12,maxCols=14;
-    const pad=54,labelW=164,headerH=178,footerH=72,bandGap=9;
-    const canvasW=Math.max(1500,Math.min(2380,520+Math.min(maxCount,maxCols)*(cardW+cardGap)));
-    const shapeMaxW=canvasW-pad*2-labelW;
-    /*
-      รูปทรงต้องอิง "ลำดับชั้น" ไม่ใช่จำนวนคน:
-      ชั้นบนแคบที่สุดและทุกชั้นด้านล่างต้องกว้างขึ้นเสมอ
-      จำนวนคนมีผลเฉพาะการจัดจำนวนแถวของการ์ดภายในชั้นเท่านั้น
-    */
-    const tierCount=present.length;
-    const firstTierRatio=tierCount===1?1:Math.min(.68,Math.max(.38,.78-.065*tierCount));
-    const widths=present.map((level,i)=>{
-      if(tierCount===1)return Math.round(shapeMaxW);
-      const ratio=firstTierRatio+(1-firstTierRatio)*(i/(tierCount-1));
-      return Math.round(shapeMaxW*ratio);
-    });
-    const groups=present.map((level,i)=>{
-      const topW=i===0?Math.max(260,Math.round(widths[i]*.58)):widths[i-1];
-      const bottomW=widths[i];
-      // ใช้ความกว้างช่วงกลางชั้นเพื่อคำนวณจำนวนการ์ดต่อแถว
-      // ทำให้ชั้นบนยังใส่สมาชิกหลายคนได้ โดยไม่ต้องขยายจนเสียทรงพีระมิด
-      const usableW=Math.max(cardW,Math.round((topW+bottomW)/2)-24);
-      const cols=Math.max(1,Math.min(maxCols,Math.floor((usableW+cardGap)/(cardW+cardGap))));
-      const rows=Math.ceil(byLevel[level].length/cols);
-      return {level,people:byLevel[level],topW,bottomW,cols,rows,height:72+rows*(cardH+rowGap)};
-    });
-    const canvasH=headerH+pad/2+groups.reduce((s,g)=>s+g.height,0)+bandGap*(groups.length-1)+footerH;
-    const scale=canvasH>5200?1:1.6;
-    const canvas=document.createElement('canvas');
-    canvas.width=Math.round(canvasW*scale);canvas.height=Math.round(canvasH*scale);
-    const ctx=canvas.getContext('2d');ctx.scale(scale,scale);
+  let y=headerH+pad;
+  rows.forEach(({e,depth,isLeader})=>{
+    const x=pad+depth*indent;
+    if(isLeader){ctx.fillStyle='#fffbeb';ctx.fillRect(0,y-8,width,rowH-4);}
+    ctx.save();ctx.beginPath();ctx.arc(x+avatar/2,y+avatar/2,avatar/2,0,Math.PI*2);ctx.closePath();ctx.clip();
+    const img=imgMap[e.id];
+    if(img)ctx.drawImage(img,x,y,avatar,avatar);else{ctx.fillStyle='#e2e8f0';ctx.fillRect(x,y,avatar,avatar);}
+    ctx.restore();
+    if(isLeader){ctx.strokeStyle='#f59e0b';ctx.lineWidth=3;ctx.beginPath();ctx.arc(x+avatar/2,y+avatar/2,avatar/2+2,0,Math.PI*2);ctx.stroke();}
+    const tx=x+avatar+16;
+    ctx.fillStyle='#10233f';ctx.font='bold 15px "Noto Sans Thai",Tahoma,sans-serif';
+    ctx.fillText(displayName(e)+(isLeader?'   ⭐ หัวหน้าทีม':''),tx,y+20);
+    ctx.fillStyle='#64748b';ctx.font='12px "Noto Sans Thai",Tahoma,sans-serif';
+    ctx.fillText(`${teamLevelLabel(e,p)} • ${teamPositionLabel(e,p)}${e.employeeCode?' • รหัส '+e.employeeCode:''}`,tx,y+38);
+    y+=rowH;
+  });
 
-    const roundRect=(x,y,w,h,r)=>{
-      const rr=Math.min(r,w/2,h/2);ctx.beginPath();ctx.moveTo(x+rr,y);ctx.arcTo(x+w,y,x+w,y+h,rr);ctx.arcTo(x+w,y+h,x,y+h,rr);ctx.arcTo(x,y+h,x,y,rr);ctx.arcTo(x,y,x+w,y,rr);ctx.closePath();
-    };
-    const fitText=(text,maxWidth,font,minSize=8)=>{
-      let size=Number((font.match(/(\d+(?:\.\d+)?)px/)||[])[1]||12),result=String(text||'-');
-      const makeFont=s=>font.replace(/\d+(?:\.\d+)?px/,`${s}px`);
-      ctx.font=makeFont(size);
-      while(size>minSize&&ctx.measureText(result).width>maxWidth){size-=.5;ctx.font=makeFont(size);}
-      if(ctx.measureText(result).width<=maxWidth)return result;
-      while(result.length>1&&ctx.measureText(result+'…').width>maxWidth)result=result.slice(0,-1);
-      return result+'…';
-    };
-    const drawCover=(img,x,y,w,h)=>{
-      if(!img){ctx.fillStyle='#e7edf5';ctx.fillRect(x,y,w,h);return;}
-      const ir=img.width/img.height,br=w/h;let sx=0,sy=0,sw=img.width,sh=img.height;
-      if(ir>br){sw=img.height*br;sx=(img.width-sw)/2;}else{sh=img.width/br;sy=Math.max(0,(img.height-sh)*.18);}
-      ctx.drawImage(img,sx,sy,sw,sh,x,y,w,h);
-    };
-    const exportColors={M3:'#b42336',M2:'#ef8b2c',M1:'#f0b43c',M0:'#d7a92f',O3:'#2da787',O2:'#27adac',O1:'#499ee6',S:'#6878d8'};
-
-    // พื้นหลังและส่วนหัวแบบรายงานบริหาร
-    ctx.fillStyle='#f4f7fb';ctx.fillRect(0,0,canvasW,canvasH);
-    const headerGradient=ctx.createLinearGradient(0,0,canvasW,headerH);
-    headerGradient.addColorStop(0,'#091426');headerGradient.addColorStop(.62,'#17365f');headerGradient.addColorStop(1,'#235581');
-    ctx.fillStyle=headerGradient;ctx.fillRect(0,0,canvasW,headerH);
-    ctx.fillStyle='rgba(255,255,255,.08)';ctx.beginPath();ctx.arc(canvasW-90,-20,240,0,Math.PI*2);ctx.fill();
-    ctx.fillStyle='#fff';ctx.font='800 34px "Noto Sans Thai",Tahoma,sans-serif';ctx.textAlign='left';
-    ctx.fillText(p.name||'ทีมจำลอง',pad,61);
-    ctx.fillStyle='#b9d6f4';ctx.font='500 16px "Noto Sans Thai",Tahoma,sans-serif';
-    const subtitle=[p.department,p.objective].filter(Boolean).join(' • ')||'โครงสร้างทีมตามระดับพนักงาน';
-    ctx.fillText(fitText(subtitle,canvasW-pad*2-360,'500 16px "Noto Sans Thai",Tahoma,sans-serif',11),pad,91);
-    ctx.fillStyle='rgba(255,255,255,.12)';roundRect(pad,113,198,39,20);ctx.fill();
-    ctx.fillStyle='#fff';ctx.font='700 14px "Noto Sans Thai",Tahoma,sans-serif';ctx.fillText(`สมาชิกทั้งหมด  ${members.length} คน`,pad+18,138);
-    const statusText=teamStatusLabel(p.status);
-    ctx.fillStyle='rgba(77,226,184,.16)';roundRect(pad+212,113,176,39,20);ctx.fill();
-    ctx.fillStyle='#81f0cf';ctx.fillText(`สถานะ  ${statusText}`,pad+230,138);
-    ctx.fillStyle='#c7d7ea';ctx.font='500 13px "Noto Sans Thai",Tahoma,sans-serif';ctx.textAlign='right';
-    ctx.fillText(new Date().toLocaleDateString('th-TH',{year:'numeric',month:'long',day:'numeric'}),canvasW-pad,138);ctx.textAlign='left';
-
-    const cx=pad+labelW+shapeMaxW/2;
-    let y=headerH+pad/2;
-    groups.forEach((g,index)=>{
-      const color=exportColors[g.level]||PYRAMID_COLORS[g.level]||'#64748b';
-      const x0Top=cx-g.topW/2,x1Top=cx+g.topW/2,x0Bot=cx-g.bottomW/2,x1Bot=cx+g.bottomW/2;
-      ctx.fillStyle=color;ctx.beginPath();ctx.moveTo(x0Top,y);ctx.lineTo(x1Top,y);ctx.lineTo(x1Bot,y+g.height);ctx.lineTo(x0Bot,y+g.height);ctx.closePath();ctx.fill();
-      ctx.strokeStyle='rgba(255,255,255,.72)';ctx.lineWidth=3;ctx.stroke();
-      // ป้ายระดับด้านซ้าย ทำให้ดูจำนวนคนในแต่ละชั้นได้ทันที
-      const labelY=y+g.height/2-29;
-      ctx.fillStyle=color;roundRect(pad,labelY,112,58,14);ctx.fill();
-      ctx.fillStyle='#fff';ctx.font='800 20px "Noto Sans Thai",Tahoma,sans-serif';ctx.textAlign='center';ctx.fillText(g.level,pad+56,labelY+25);
-      ctx.font='600 12px "Noto Sans Thai",Tahoma,sans-serif';ctx.fillText(`${g.people.length} คน`,pad+56,labelY+44);
-      ctx.fillStyle='#7b8da4';ctx.font='600 11px "Noto Sans Thai",Tahoma,sans-serif';ctx.fillText(index===0?'ระดับสูงสุด':'ระดับทีม',pad+56,labelY+75);ctx.textAlign='left';
-
-      const contentH=g.rows*cardH+(g.rows-1)*rowGap;
-      let cardY=y+(g.height-contentH)/2;
-      for(let row=0;row<g.rows;row++){
-        const rowPeople=g.people.slice(row*g.cols,(row+1)*g.cols);
-        const rowW=rowPeople.length*cardW+(rowPeople.length-1)*cardGap;
-        let cardX=cx-rowW/2;
-        rowPeople.forEach(e=>{
-          const isLeader=Number(p.leaderId)===Number(e.id),avatar=54,ax=cardX+cardW/2,ay=cardY+35;
-          ctx.save();ctx.shadowColor='rgba(15,35,63,.24)';ctx.shadowBlur=16;ctx.shadowOffsetY=6;
-          ctx.fillStyle='#fff';roundRect(cardX,cardY,cardW,cardH,15);ctx.fill();ctx.restore();
-          ctx.save();ctx.beginPath();ctx.arc(ax,ay,avatar/2,0,Math.PI*2);ctx.clip();drawCover(imgMap[e.id],ax-avatar/2,ay-avatar/2,avatar,avatar);ctx.restore();
-          ctx.strokeStyle=isLeader?'#f4b740':'#dce5ef';ctx.lineWidth=isLeader?4:2;ctx.beginPath();ctx.arc(ax,ay,avatar/2+2,0,Math.PI*2);ctx.stroke();
-          if(isLeader){ctx.fillStyle='#f4b740';ctx.beginPath();ctx.arc(cardX+cardW-18,cardY+18,12,0,Math.PI*2);ctx.fill();ctx.fillStyle='#fff';ctx.font='700 13px Arial';ctx.textAlign='center';ctx.fillText('★',cardX+cardW-18,cardY+23);}
-          ctx.fillStyle='#13233a';ctx.font='800 11px "Noto Sans Thai",Tahoma,sans-serif';ctx.textAlign='center';
-          ctx.fillText(fitText(displayName(e),cardW-14,'800 11px "Noto Sans Thai",Tahoma,sans-serif',8),ax,cardY+77);
-          const role=p.overrides?.[e.id]?.position||e.position||'-';
-          ctx.fillStyle='#66758b';ctx.font='500 9.5px "Noto Sans Thai",Tahoma,sans-serif';
-          ctx.fillText(fitText(role,cardW-15,'500 9.5px "Noto Sans Thai",Tahoma,sans-serif',7.5),ax,cardY+96);
-          ctx.fillStyle='#eef2ff';roundRect(cardX+cardW/2-31,cardY+106,62,16,8);ctx.fill();
-          ctx.fillStyle='#4f46e5';ctx.font='700 8.5px "Noto Sans Thai",Tahoma,sans-serif';ctx.fillText(e.employeeCode||g.level,ax,cardY+118);
-          ctx.textAlign='left';cardX+=cardW+cardGap;
-        });
-        cardY+=cardH+rowGap;
-      }
-      y+=g.height+bandGap;
-    });
-
-    ctx.fillStyle='#dde5ef';ctx.fillRect(pad,canvasH-footerH+10,canvasW-pad*2,1);
-    ctx.fillStyle='#65758a';ctx.font='500 12px "Noto Sans Thai",Tahoma,sans-serif';ctx.textAlign='left';
-    ctx.fillText('ภาพนี้สร้างจากข้อมูลสมาชิกของทีมที่เลือกใน Team Planner',pad,canvasH-25);
-    ctx.textAlign='right';ctx.fillText('Org Chart Planner',canvasW-pad,canvasH-25);ctx.textAlign='left';
-
-    const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png',1));
-    if(!blob)throw new Error('PNG_CREATE_FAILED');
-    const url=URL.createObjectURL(blob),a=document.createElement('a');
-    a.href=url;a.download=`ทีม-${(p.name||'ทีมจำลอง').replace(/[\\/:*?"<>|]/g,'')}-pyramid.png`;
-    document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),4000);
-    showToast(`ส่งออกพีระมิดทีม “${p.name}” แล้ว`);
-  }catch(err){console.error(err);showToast('สร้างรูปพีระมิดไม่สำเร็จ กรุณาลองอีกครั้ง');}
-  finally{if(btn){btn.disabled=false;btn.textContent=oldLabel;}}
+  canvas.toBlob(blob=>{
+    if(!blob){showToast('สร้างรูปภาพไม่สำเร็จ');return;}
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');
+    a.href=url;a.download=`ทีม-${(p.name||'ทีมจำลอง').replace(/[\\/:*?"<>|]/g,'')}.png`;
+    document.body.appendChild(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),4000);
+    showToast('ส่งออกรูปภาพแล้ว');
+  });
 }
 function renderTeamPlanList(){
   const el=$('teamPlanList');if(!el)return;
